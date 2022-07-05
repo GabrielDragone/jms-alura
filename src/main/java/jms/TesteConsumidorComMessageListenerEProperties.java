@@ -2,16 +2,22 @@ package jms;
 
 import javax.jms.*;
 import javax.naming.InitialContext;
+import java.util.Properties;
 import java.util.Scanner;
 
-public class TesteProdutor {
+public class TesteConsumidorComMessageListenerEProperties {
 
-    // Exemplo de ENVIO de mensagens. Posteriormente usar a classe TesteConsumidorComMessageListener para testar o recebimento:
+    // Clase pra mostrar como utilizar a classe Properties ao invés do JNDI:
     public static void main(String[] args) throws Exception {
 
         // Inicializa:
         // Criar context, factory, connection
-        InitialContext initialContext = new InitialContext();
+        Properties properties = new Properties();
+        properties.setProperty("java.naming.factory.initial", "org.apache.activemq.jndi.ActiveMQInitialContextFactory");
+        properties.setProperty("java.naming.provider.url", "tcp://localhost:61616");
+        properties.setProperty("queue.financeiro", "fila.financeiro");
+
+        InitialContext initialContext = new InitialContext(properties);
         ConnectionFactory connectionFactory = (ConnectionFactory)initialContext.lookup("ConnectionFactory");
         Connection connection = connectionFactory.createConnection();
 
@@ -22,13 +28,17 @@ public class TesteProdutor {
                 Session.AUTO_ACKNOWLEDGE); // Confirma automaticamente o recebimento da mensagem.
 
         Destination destination = (Destination) initialContext.lookup("financeiro"); // A fila de dentro do jndi.
+        MessageConsumer messageConsumer = session.createConsumer(destination); // Fica ouvindo uma fila.
+        // Finaliza.
 
-        MessageProducer messageProducer = session.createProducer(destination);
-
-        for(int i = 0; i < 1000 ; i++){
-            Message message = session.createTextMessage("<pedido><id>" + i + "</id></pedido>");
-            messageProducer.send(message); // Esse cara faz o envio da mensagem para a fila.
-        }
+        messageConsumer.setMessageListener(message -> {
+            TextMessage textMessage = (TextMessage)message;
+            try {
+                System.out.println(textMessage.getText());
+            } catch (JMSException e) {
+                e.printStackTrace();
+            }
+        });
 
         System.out.println("[TesteConsumidorComMessageListener] Teste Antes do nextLine()");
 

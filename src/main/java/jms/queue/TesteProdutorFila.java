@@ -1,10 +1,10 @@
-package jms;
+package jms.queue;
 
 import javax.jms.*;
 import javax.naming.InitialContext;
 import java.util.Scanner;
 
-public class TesteProdutor {
+public class TesteProdutorFila {
 
     // Exemplo de ENVIO de mensagens. Posteriormente usar a classe TesteConsumidorComMessageListener para testar o recebimento:
     public static void main(String[] args) throws Exception {

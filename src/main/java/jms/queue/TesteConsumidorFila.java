@@ -1,10 +1,10 @@
-package jms;
+package jms.queue;
 
 import javax.jms.*;
 import javax.naming.InitialContext;
 import java.util.Scanner;
 
-public class TesteConsumidor {
+public class TesteConsumidorFila {
 
     // Exemplo de recebimento de apenas uma mensagem:
     public static void main(String[] args) throws Exception {

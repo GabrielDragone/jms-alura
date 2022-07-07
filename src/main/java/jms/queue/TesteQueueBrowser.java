@@ -1,4 +1,4 @@
-package jms;
+package jms.queue;
 
 import javax.jms.*;
 import javax.naming.InitialContext;

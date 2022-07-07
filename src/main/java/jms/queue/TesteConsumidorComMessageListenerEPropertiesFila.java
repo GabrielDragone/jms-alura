@@ -1,11 +1,11 @@
-package jms;
+package jms.queue;
 
 import javax.jms.*;
 import javax.naming.InitialContext;
 import java.util.Properties;
 import java.util.Scanner;
 
-public class TesteConsumidorComMessageListenerEProperties {
+public class TesteConsumidorComMessageListenerEPropertiesFila {
 
     // Clase pra mostrar como utilizar a classe Properties ao invés do JNDI:
     public static void main(String[] args) throws Exception {

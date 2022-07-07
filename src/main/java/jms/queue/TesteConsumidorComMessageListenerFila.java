@@ -1,10 +1,10 @@
-package jms;
+package jms.queue;
 
 import javax.jms.*;
 import javax.naming.InitialContext;
 import java.util.Scanner;
 
-public class TesteConsumidorComMessageListener {
+public class TesteConsumidorComMessageListenerFila {
 
     // Exemplo de recebimento de várias mensagens enquanto sistema estiver rodando:
     public static void main(String[] args) throws Exception {

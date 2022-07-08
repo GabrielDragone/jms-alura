@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b832af9c-7fde-4e33-a6b2-c4e38b112e68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/topic/TesteConsumidorComercialTopico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/topic/TesteConsumidorEstoqueTopico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/topic/TesteConsumidorTopico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/topic/TesteProdutorTopico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/topic/TesteConsumidorEstoqueTopicoSelector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/topic/TesteProdutorTopicoSelector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jms/QueueReceiverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/queue/QueueReceiverTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jms/TesteConsumidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/queue/TesteConsumidorFila.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jms/TesteConsumidorComMessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/queue/TesteConsumidorComMessageListenerFila.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jms/TesteConsumidorComMessageListenerDois.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/queue/TesteConsumidorComMessageListenerDoisFila.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jms/TesteConsumidorComMessageListenerEProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/queue/TesteConsumidorComMessageListenerEPropertiesFila.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jms/TesteProdutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/queue/TesteProdutorFila.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jms/TesteQueueBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/queue/TesteQueueBrowser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jndi.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jndi.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,14 +33,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Gabriel Alves/OneDrive/Documentos/Projects/jms-alura/lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Gabriel Alves/OneDrive/Documentos/Projects/jms-alura/lib&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Gabriel Alves\OneDrive\Documentos\Projects\jms-alura\lib" />
@@ -65,7 +54,7 @@
       <recent name="jms" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TesteConsumidorComercialTopico">
+  <component name="RunManager" selected="Application.TesteProdutorTopicoSelector">
     <configuration name="TesteConsumidorComercialTopico" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="topic.TesteConsumidorComercialTopico" />
       <module name="jms-alura" />
@@ -92,8 +81,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesteConsumidorTopico" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="topic.TesteConsumidorTopico" />
+    <configuration name="TesteConsumidorEstoqueTopicoSelector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="topic.TesteConsumidorEstoqueTopicoSelector" />
       <module name="jms-alura" />
       <extension name="coverage">
         <pattern>
@@ -105,12 +94,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesteQueueBrowser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jms.queue.TesteQueueBrowser" />
+    <configuration name="TesteProdutorTopicoSelector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="topic.TesteProdutorTopicoSelector" />
       <module name="jms-alura" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jms.queue.*" />
+          <option name="PATTERN" value="topic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TesteProdutorTopicoSelector" />
+        <item itemvalue="Application.TesteConsumidorEstoqueTopicoSelector" />
         <item itemvalue="Application.TesteConsumidorComercialTopico" />
         <item itemvalue="Application.TesteConsumidorEstoqueTopico" />
         <item itemvalue="Application.topic.TesteProdutorTopico" />
-        <item itemvalue="Application.TesteConsumidorTopico" />
-        <item itemvalue="Application.jms.TesteQueueBrowser" />
       </list>
     </recent_temporary>
   </component>
@@ -174,6 +163,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/jms/queue/TesteConsumidorFila.java</url>
           <line>13</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/topic/TesteConsumidorEstoqueTopicoSelector.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/topic/TesteProdutorTopicoSelector.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/topic/TesteProdutorTopicoSelector.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

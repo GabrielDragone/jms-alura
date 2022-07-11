@@ -5,25 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b832af9c-7fde-4e33-a6b2-c4e38b112e68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jms/topic/consumidor/TesteConsumidorEstoqueTopicoSerializable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jms/topic/produtor/TesteProdutorTopicoComPedidoEmObjectMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jms/topic/produtor/TesteProdutorTopicoComPedidoEmXML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/modelo/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/modelo/Pedido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/modelo/PedidoFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jms/queue/consumidor/TesteConsumidorComMessageListenerDLQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jms/queue/consumidor/TesteConsumidorMLAcknowledge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jms/queue/consumidor/TesteConsumidorMLTransacional.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jms/queue/produtor/TesteProdutorFilaAcknowledge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jms/queue/TesteConsumidorComMessageListenerDoisFila.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/queue/consumidor/TesteConsumidorComMessageListenerDoisFila.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jms/queue/TesteConsumidorComMessageListenerEPropertiesFila.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/queue/consumidor/TesteConsumidorComMessageListenerEPropertiesFila.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jms/queue/TesteConsumidorComMessageListenerFila.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/queue/consumidor/TesteConsumidorComMessageListenerFila.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jms/queue/TesteConsumidorFila.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/queue/consumidor/TesteConsumidorFila.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jms/queue/TesteProdutorFila.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/queue/produtor/TesteProdutorFila.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/topic/TesteConsumidorComercialTopico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/topic/consumidor/TesteConsumidorComercialTopico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/topic/TesteConsumidorEstoqueTopico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/topic/consumidor/TesteConsumidorEstoqueTopico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/topic/TesteConsumidorEstoqueTopicoSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/topic/consumidor/TesteConsumidorEstoqueTopicoSelector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/topic/TesteConsumidorTopico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/topic/consumidor/TesteConsumidorTopico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/topic/TesteProdutorTopico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/topic/produtor/TesteProdutorTopico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/topic/TesteProdutorTopicoSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/topic/produtor/TesteProdutorTopicoSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jndi.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jndi.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,19 +55,59 @@
       <recent name="C:\Users\Gabriel Alves\OneDrive\Documentos\Projects\jms-alura\src\main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="jms.queue.consumidor" />
+      <recent name="jms.queue.produtor" />
       <recent name="jms.topic.consumidor" />
       <recent name="jms.topic.produtor" />
       <recent name="topic" />
-      <recent name="jms" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TesteProdutorTopicoComPedidoEmObjectMessage">
-    <configuration name="TesteConsumidorEstoqueTopicoSerializable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jms.topic.consumidor.TesteConsumidorEstoqueTopicoSerializable" />
+  <component name="RunManager" selected="Application.TesteConsumidorComMessageListenerDLQ">
+    <configuration name="TesteConsumidorComMessageListenerDLQ" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jms.queue.consumidor.TesteConsumidorComMessageListenerDLQ" />
       <module name="jms-alura" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jms.topic.consumidor.*" />
+          <option name="PATTERN" value="jms.queue.consumidor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesteConsumidorMLAcknowledge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jms.queue.consumidor.TesteConsumidorMLAcknowledge" />
+      <module name="jms-alura" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jms.queue.consumidor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesteConsumidorMLTransacional" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jms.queue.consumidor.TesteConsumidorMLTransacional" />
+      <module name="jms-alura" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jms.queue.consumidor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesteProdutorFilaAcknowledge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jms.queue.produtor.TesteProdutorFilaAcknowledge" />
+      <module name="jms-alura" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jms.queue.produtor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,52 +128,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesteProdutorTopicoComPedidoEmXML" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jms.topic.produtor.TesteProdutorTopicoComPedidoEmXML" />
-      <module name="jms-alura" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jms.topic.produtor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TesteProdutorTopicoSelector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="topic.TesteProdutorTopicoSelector" />
-      <module name="jms-alura" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="topic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="jms.topic.consumidor.TesteConsumidorEstoqueTopico" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jms.topic.consumidor.TesteConsumidorEstoqueTopico" />
-      <module name="jms-alura" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jms.topic.consumidor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TesteConsumidorComMessageListenerDLQ" />
+        <item itemvalue="Application.TesteConsumidorMLTransacional" />
+        <item itemvalue="Application.TesteProdutorFilaAcknowledge" />
+        <item itemvalue="Application.TesteConsumidorMLAcknowledge" />
         <item itemvalue="Application.TesteProdutorTopicoComPedidoEmObjectMessage" />
-        <item itemvalue="Application.TesteConsumidorEstoqueTopicoSerializable" />
-        <item itemvalue="Application.jms.topic.consumidor.TesteConsumidorEstoqueTopico" />
-        <item itemvalue="Application.TesteProdutorTopicoComPedidoEmXML" />
-        <item itemvalue="Application.TesteProdutorTopicoSelector" />
       </list>
     </recent_temporary>
   </component>

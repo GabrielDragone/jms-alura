@@ -5,9 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b832af9c-7fde-4e33-a6b2-c4e38b112e68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/topic/TesteConsumidorEstoqueTopicoSelector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/topic/TesteProdutorTopicoSelector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jms/topic/consumidor/TesteConsumidorEstoqueTopicoSerializable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jms/topic/produtor/TesteProdutorTopicoComPedidoEmObjectMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jms/topic/produtor/TesteProdutorTopicoComPedidoEmXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/modelo/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/modelo/Pedido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/modelo/PedidoFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jms/queue/TesteConsumidorComMessageListenerDoisFila.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/queue/consumidor/TesteConsumidorComMessageListenerDoisFila.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jms/queue/TesteConsumidorComMessageListenerEPropertiesFila.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/queue/consumidor/TesteConsumidorComMessageListenerEPropertiesFila.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jms/queue/TesteConsumidorComMessageListenerFila.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/queue/consumidor/TesteConsumidorComMessageListenerFila.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jms/queue/TesteConsumidorFila.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/queue/consumidor/TesteConsumidorFila.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jms/queue/TesteProdutorFila.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/queue/produtor/TesteProdutorFila.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/topic/TesteConsumidorComercialTopico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/topic/consumidor/TesteConsumidorComercialTopico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/topic/TesteConsumidorEstoqueTopico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/topic/consumidor/TesteConsumidorEstoqueTopico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/topic/TesteConsumidorEstoqueTopicoSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/topic/consumidor/TesteConsumidorEstoqueTopicoSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/topic/TesteConsumidorTopico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/topic/consumidor/TesteConsumidorTopico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/topic/TesteProdutorTopico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/topic/produtor/TesteProdutorTopico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/topic/TesteProdutorTopicoSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jms/topic/produtor/TesteProdutorTopicoSelector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,21 +62,25 @@
       <recent name="C:\Users\Gabriel Alves\OneDrive\Documentos\Projects\jms-alura\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gabriel Alves\OneDrive\Documentos\Projects\jms-alura\src\main\java\modelo" />
+      <recent name="C:\Users\Gabriel Alves\OneDrive\Documentos\Projects\jms-alura\src\main\java\jms" />
       <recent name="C:\Users\Gabriel Alves\OneDrive\Documentos\Projects\jms-alura\src\main\resources" />
       <recent name="C:\Users\Gabriel Alves\OneDrive\Documentos\Projects\jms-alura\src\main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="jms.topic.consumidor" />
+      <recent name="jms.topic.produtor" />
       <recent name="topic" />
       <recent name="jms" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TesteProdutorTopicoSelector">
-    <configuration name="TesteConsumidorComercialTopico" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="topic.TesteConsumidorComercialTopico" />
+  <component name="RunManager" selected="Application.TesteProdutorTopicoComPedidoEmObjectMessage">
+    <configuration name="TesteConsumidorEstoqueTopicoSerializable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jms.topic.consumidor.TesteConsumidorEstoqueTopicoSerializable" />
       <module name="jms-alura" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="topic.*" />
+          <option name="PATTERN" value="jms.topic.consumidor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,12 +88,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesteConsumidorEstoqueTopico" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="topic.TesteConsumidorEstoqueTopico" />
+    <configuration name="TesteProdutorTopicoComPedidoEmObjectMessage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jms.topic.produtor.TesteProdutorTopicoComPedidoEmObjectMessage" />
       <module name="jms-alura" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="topic.*" />
+          <option name="PATTERN" value="jms.topic.produtor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,12 +101,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesteConsumidorEstoqueTopicoSelector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="topic.TesteConsumidorEstoqueTopicoSelector" />
+    <configuration name="TesteProdutorTopicoComPedidoEmXML" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jms.topic.produtor.TesteProdutorTopicoComPedidoEmXML" />
       <module name="jms-alura" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="topic.*" />
+          <option name="PATTERN" value="jms.topic.produtor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +127,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="topic.TesteProdutorTopico" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="topic.TesteProdutorTopico" />
+    <configuration name="jms.topic.consumidor.TesteConsumidorEstoqueTopico" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jms.topic.consumidor.TesteConsumidorEstoqueTopico" />
       <module name="jms-alura" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="topic.*" />
+          <option name="PATTERN" value="jms.topic.consumidor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TesteProdutorTopicoComPedidoEmObjectMessage" />
+        <item itemvalue="Application.TesteConsumidorEstoqueTopicoSerializable" />
+        <item itemvalue="Application.jms.topic.consumidor.TesteConsumidorEstoqueTopico" />
+        <item itemvalue="Application.TesteProdutorTopicoComPedidoEmXML" />
         <item itemvalue="Application.TesteProdutorTopicoSelector" />
-        <item itemvalue="Application.TesteConsumidorEstoqueTopicoSelector" />
-        <item itemvalue="Application.TesteConsumidorComercialTopico" />
-        <item itemvalue="Application.TesteConsumidorEstoqueTopico" />
-        <item itemvalue="Application.topic.TesteProdutorTopico" />
       </list>
     </recent_temporary>
   </component>
@@ -160,22 +180,22 @@
           <option name="timeStamp" value="1" />
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/jms/queue/TesteConsumidorFila.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/jms/queue/consumidor/TesteConsumidorFila.java</url>
           <line>13</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/topic/TesteConsumidorEstoqueTopicoSelector.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/jms/topic/consumidor/TesteConsumidorEstoqueTopicoSelector.java</url>
           <line>6</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/topic/TesteProdutorTopicoSelector.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/jms/topic/produtor/TesteProdutorTopicoSelector.java</url>
           <line>23</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/topic/TesteProdutorTopicoSelector.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/jms/topic/produtor/TesteProdutorTopicoSelector.java</url>
           <line>26</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>

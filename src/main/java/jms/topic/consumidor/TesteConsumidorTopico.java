@@ -1,24 +1,23 @@
-package topic;
+package jms.topic.consumidor;
 
 import javax.jms.*;
 import javax.naming.InitialContext;
 import java.util.Scanner;
 
-public class TesteConsumidorEstoqueTopico {
+public class TesteConsumidorTopico {
 
-    // Vai receber a mensagem mesmo se o Consumidor estiver offline, pois foi feito a configuração seClienteID e assinatura.
+    // Só vai receber mensagem se estiver online no momento do ProdutorTopic enviar:
     public static void main(String[] args) throws Exception {
         InitialContext initialContext = new InitialContext();
         ConnectionFactory connectionFactory = (ConnectionFactory)initialContext.lookup("ConnectionFactory");
         Connection connection = connectionFactory.createConnection();
-        connection.setClientID("estoque");
 
         connection.start();
 
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
-        Topic topico = (Topic) initialContext.lookup("loja"); // O topico de dentro do jndi.
-        MessageConsumer messageConsumer = session.createDurableSubscriber(topico, "assinatura"); // Fica ouvindo um topico.
+        Destination topico = (Destination) initialContext.lookup("loja"); // O topico de dentro do jndi.
+        MessageConsumer messageConsumer = session.createConsumer(topico); // Fica ouvindo um topico.
 
         messageConsumer.setMessageListener(new MessageListener() {
 
@@ -26,7 +25,7 @@ public class TesteConsumidorEstoqueTopico {
             public void onMessage(Message message) {
                 TextMessage textMessage = (TextMessage)message;
                 try {
-                    System.out.println("TesteConsumidorEstoqueTopico: " + textMessage.getText());
+                    System.out.println(textMessage.getText());
                 } catch (JMSException e) {
                     e.printStackTrace();
                 }
@@ -34,9 +33,9 @@ public class TesteConsumidorEstoqueTopico {
 
         });
 
-        System.out.println("[TesteConsumidorEstoqueTopico] Teste Antes do nextLine()");
+        System.out.println("[TesteConsumidorTopico] Teste Antes do nextLine()");
         new Scanner(System.in).nextLine();
-        System.out.println("[TesteConsumidorEstoqueTopico] Teste Depois do nextLine()");
+        System.out.println("[TesteConsumidorTopico] Teste Depois do nextLine()");
 
         session.close();
         connection.close();

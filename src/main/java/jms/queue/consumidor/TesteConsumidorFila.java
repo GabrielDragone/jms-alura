@@ -1,4 +1,4 @@
-package jms.queue;
+package jms.queue.consumidor;
 
 import javax.jms.*;
 import javax.naming.InitialContext;

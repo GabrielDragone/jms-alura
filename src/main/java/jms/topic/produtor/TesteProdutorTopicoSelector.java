@@ -1,4 +1,4 @@
-package topic;
+package jms.topic.produtor;
 
 import javax.jms.*;
 import javax.naming.InitialContext;

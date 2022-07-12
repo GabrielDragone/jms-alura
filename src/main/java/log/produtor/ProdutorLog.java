@@ -1,4 +1,6 @@
-package log;
+package log.produtor;
+
+import log.ConnectionUtils;
 
 import javax.jms.*;
 import java.util.Scanner;
@@ -26,7 +28,7 @@ public class ProdutorLog {
         // Alterar os parâmetros abaixo para simular outros cenários:
         messageProducer.send(
                 message, // A mensagem em si.
-                DeliveryMode.NON_PERSISTENT, // NON_PERSISTENT: Não guarda a msg num banco de dados / PERSISTENT: Guarda a msg num banco de dados. Caso o ActiveMq caia, apenas as mensagens não consumidas no modo PERSISTENT serão recuperadas.
+                DeliveryMode.NON_PERSISTENT, // NON_PERSISTENT: Não guarda a msg num banco de dados / PERSISTENT: Guarda a msg num banco de dados. Caso o ActiveMq caia/reinicie, apenas as mensagens não consumidas no modo PERSISTENT serão recuperadas.
                 1, // Prioridade: Vai de 0 a 9. Sendo 9 a maior prioridade.
                 80000 // Tempo em milisegundos que a mensagem vai aguardar para ser consumida. Se não for consumida nesse tempo, será movida para Dequeued
         );

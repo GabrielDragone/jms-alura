@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b832af9c-7fde-4e33-a6b2-c4e38b112e68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/log/ConnectionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/log/ConsumidorLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/log/ProdutorLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/log/consumidor/ConsumidorLogComPrioridadeMaiorQueQuatro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/log/produtor/ProdutorLogComPrioridade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jndi.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jndi.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/log/ConnectionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/log/ConnectionUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/log/ConsumidorLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/log/consumidor/ConsumidorLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/log/ProdutorLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/log/produtor/ProdutorLog.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,20 +57,20 @@
       <recent name="C:\Users\Gabriel Alves\OneDrive\Documentos\Projects\jms-alura\src\main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="log.consumidor" />
+      <recent name="log.produtor" />
       <recent name="jms.queue.consumidor" />
       <recent name="jms.queue.produtor" />
       <recent name="jms.topic.consumidor" />
-      <recent name="jms.topic.produtor" />
-      <recent name="topic" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ProdutorLog">
+  <component name="RunManager" selected="Application.ConsumidorLogComPrioridadeMaiorQueQuatro">
     <configuration name="ConsumidorLog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="log.ConsumidorLog" />
+      <option name="MAIN_CLASS_NAME" value="log.consumidor.ConsumidorLog" />
       <module name="jms-alura" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="log.*" />
+          <option name="PATTERN" value="log.produtor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +78,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProdutorLog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="log.ProdutorLog" />
+    <configuration name="ConsumidorLogComPrioridadeMaiorQueQuatro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="log.consumidor.ConsumidorLogComPrioridadeMaiorQueQuatro" />
       <module name="jms-alura" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="log.*" />
+          <option name="PATTERN" value="log.consumidor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProdutorLogComPrioridade" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="log.produtor.ProdutorLogComPrioridade" />
+      <module name="jms-alura" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="log.produtor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,25 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesteProdutorTopico" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jms.topic.produtor.TesteProdutorTopico" />
+    <configuration name="log.produtor.ProdutorLog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="log.produtor.ProdutorLog" />
       <module name="jms-alura" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jms.topic.produtor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TesteProdutorTopicoSelector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jms.topic.produtor.TesteProdutorTopicoSelector" />
-      <module name="jms-alura" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jms.topic.produtor.*" />
+          <option name="PATTERN" value="log.produtor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProdutorLog" />
-        <item itemvalue="Application.ConsumidorLog" />
+        <item itemvalue="Application.ConsumidorLogComPrioridadeMaiorQueQuatro" />
+        <item itemvalue="Application.ProdutorLogComPrioridade" />
+        <item itemvalue="Application.log.ConsumidorLog" />
+        <item itemvalue="Application.log.produtor.ProdutorLog" />
         <item itemvalue="Application.TesteProdutorFilaAcknowledge" />
-        <item itemvalue="Application.TesteProdutorTopico" />
-        <item itemvalue="Application.TesteProdutorTopicoSelector" />
       </list>
     </recent_temporary>
   </component>

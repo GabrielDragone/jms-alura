@@ -1,16 +1,18 @@
-package log;
+package log.consumidor;
+
+import log.ConnectionUtils;
 
 import javax.jms.*;
 import java.util.Scanner;
 
-public class ConsumidorLog {
+public class ConsumidorLogComPrioridadeMaiorQueQuatro {
 
     // Exemplo de projeto log que foi inserido no mesmo projeto do jms, pois não vi necessidade de separá-los.
-    // Nesse exemplo, iremos consumir a fila.log, definindo configurações como:
-    // Modo de Entrega: PERSISTENT (guarda no banco) ou NON_PERSISTENT (não guarda no banco) para mensagens a serem consumidas.
-    // Prioridade de entrega, que varia de 0 a 9, sendo 9 de maior prioridade.
-    // Tempo que a mensagem aguarda para ser consumida antes de ser removida.
+    // Nesse exemplo, iremos consumir a fila.log, definindo configurações como, com mensagens com prioridade maior que 4 apenas:
     // Usar a classe ProdutorLog para gerar mensagens a serem consumidas.
+    // No exemplo abaixo, deve imprimir assim:
+    // 9 - ERROR - Ocorreu um erro aqui (use sua imaginação xD)
+    // 5 - INFO - Olá Mundo
     public static void main(String[] args) throws Exception {
 
         ConnectionUtils utilidade = new ConnectionUtils();
@@ -18,7 +20,7 @@ public class ConsumidorLog {
         Connection connection = utilidade.criarConnection();
         Session session = utilidade.criarSession();
         Destination destination = utilidade.criarDestination("LOG");
-        MessageConsumer messageConsumer = utilidade.criarMessageConsumer(destination);
+        MessageConsumer messageConsumer = utilidade.criarMessageConsumer(destination, "JMSPriority > 4");
 
         messageConsumer.setMessageListener(message -> {
             TextMessage textMessage = (TextMessage)message;

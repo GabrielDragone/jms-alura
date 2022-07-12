@@ -29,7 +29,10 @@ public class ConnectionUtils {
         return destination;
     }
 
-    public MessageConsumer criarMessageConsumer(Destination destination) throws Exception {
+    public MessageConsumer criarMessageConsumer(Destination destination, String selector) throws Exception {
+        if (!"".equals(selector)) {
+            return session.createConsumer(destination, selector);
+        }
         return session.createConsumer(destination);
     }
 
